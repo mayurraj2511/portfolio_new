@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main {
+            height: 100vh;
+            width: 100vw;
+            background-color: aqua;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+        }
+        aside {
+            height: 100%;
+            width: 20%;
+            background-color: coral;
+        }
+        .beside {
+            height: 100%;
+            width: 70%;
+            background-color: lightgreen;
+            overflow: scroll !important; 
+        }
+        .section {
+            height: 80%;
+            width: 90%;
+            background-color: lightpink;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <aside></aside>
+        <div class="beside">
+            <div class="section"></div>
+            <div class="section"></div>
+            <div class="section"></div>
+            <div class="section"></div>
+        </div>
+    </main>
+</body>
+</html>
