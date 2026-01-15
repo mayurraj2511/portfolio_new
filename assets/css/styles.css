@@ -70,6 +70,11 @@ h3 {
     background-color: rgb(94, 94, 91);
     border-radius: 50%;
 }
+.profile_pic {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
 
 a {
     text-decoration: none;
@@ -81,6 +86,11 @@ a {
 .icon {
     color: white;
     font-size: 25px;
+}
+
+.service_icon {
+    height: 50px;
+    width: 50px;
 }
 
 .beside {
@@ -270,7 +280,7 @@ a {
     width: 45%;
     display: flex;
      background: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
-    border-radius: 12px;            /* Rounded corners */
+    border-radius: 10px;            /* Rounded corners */
     border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
     backdrop-filter: blur(10px);    /* Glass blur effect */
     -webkit-backdrop-filter: blur(10px); /* Safari support */
@@ -282,6 +292,7 @@ a {
 .service_icon_container {
     height: 45%;
     width: 25%;
+    border-radius: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
