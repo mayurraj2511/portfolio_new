@@ -20,7 +20,7 @@ main {
 
 /* Aside works */
 aside {
-    width: 25%;
+    width: 22%;
     height: 100%;
     background-color: coral;
     display: flex;
@@ -95,7 +95,7 @@ a {
 
 .beside {
     height: 100%;
-    width: 75%;
+    width: 78%;
     background-color: rgb(9, 10, 9);
     overflow: scroll !important;
     scrollbar-width: none;
