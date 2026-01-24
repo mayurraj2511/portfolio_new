@@ -92,6 +92,12 @@ a {
     height: 50px;
     width: 50px;
 }
+.service_icon:hover {
+    transform: scale(1.2);
+    /* transform: rotate(360deg); */
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
 
 .beside {
     height: 100%;
@@ -276,9 +282,12 @@ a {
     /* background-color: lightgreen; */
 }
 .what_i_dooo {
-    height: 40%;
+    height: 47%;
     width: 45%;
     display: flex;
+    gap: 20px;
+    /* align-items: flex-start;
+    justify-content: space-evenly; */
     background: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
     border-radius: 10px;            /* Rounded corners */
     border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
@@ -301,35 +310,231 @@ a {
 .service_details_container {
     height: 100%;
     width: 75%;
-    background-color: rgb(158, 100, 100);
+    overflow: visible;
+    /* background-color: rgb(158, 100, 100); */
 }
-
+.service_details_container > span {
+    color: whitesmoke;
+}
 .addres_and_form_div_container {
     height: 70%;
     width: 90%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: lightgreen;
 }
-
+.msg_cont {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+.msg_cont_sub {
+    height: 92%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #22d3ee;
+}
+.my_skill {
+    color: white;
+    font: bold 2rem "Poppins", sans-serif;
+}
+.form_cont {
+    height: 100%;
+    width: 50%;
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form_container_glass {
+    height: 92%;
+    width: 75%;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+    border-radius: 10px;            /* Rounded corners */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+    backdrop-filter: blur(10px);    /* Glass blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    padding: 20px;
+    color: white; 
+}
 .skill_container {
-    height: 70%;
+    height: 50%;
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
 }
 .progressbox_container {
-    height: 70%;
+    height: 90%;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     background-color: lightgray;
 }
 .progressbox {
-    width: 30%;
-    height: auto;
-    background-color: violet;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #343a40; /* Semi-transparent black */
+    border-radius: 10px;            /* Rounded corners */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+    backdrop-filter: blur(10px);    /* Glass blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    /* background-color: violet; */
+    border-radius: 2px;
+}
+.progressbox_sub {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 10px; */
+    /* background-color: indigo; */
+}
+.progressbox_sub > span {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+progress {
+    width: 100%;
+    height: 30%;
+}
+.skill_logo {
+    height: 30px;
+    width: 30px;
+    overflow: visible;
+}
+/* Services Section */
+
+.services{
+  padding: 80px 0;
+  /* background: #0b0f19; */
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.container{
+  width: min(1100px, 92%);
+  margin: auto;
+}
+
+.section-head{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-head h2{
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+
+.section-head p{
+  color: #b6b6b6;
+  font-size: 16px;
+}
+
+.services-grid{
+    height: fit-content;
+    padding-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.service-card{
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 28px;
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(125, 76, 255, 0.35), transparent 55%);
+  opacity: 0;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+
+.service-card:hover{
+  transform: translateY(-8px);
+  border-color: rgba(125, 76, 255, 0.6);
+  cursor: pointer;
+}
+
+.service-card:hover::before{
+  opacity: 1;
+}
+
+.icon-box{
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: rgba(125, 76, 255, 0.12);
+  margin-bottom: 18px;
+}
+
+.icon-box img{
+  width: 30px;
+  height: 30px;
+  /* filter: brightness(1) invert(1); */
+}
+
+.service-card h3{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-card p{
+  color: #b6b6b6;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.service-link{
+  text-decoration: none;
+  color: #7d4cff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.service-link:hover{
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media(max-width: 900px){
+  .services-grid{
+    grid-template-columns: 1fr;
+  }
 }

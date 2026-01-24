@@ -62,3 +62,33 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.5 });
 
 observer.observe(document.querySelector('.stats-section'));
+
+function loadSkills() {
+    document.getElementById("skills_container").innerHTML= '';
+
+    let products = [
+        {"name":"HTML5", "img":"assets/images/html.png"},
+        {"name":"CSS3", "img":"assets/images/css.png"},
+        {"name":"JavaScript", "img":"assets/images/js.png"},
+        {"name":"Bootstrap", "img":"assets/images/bootstrap.png"},
+        {"name":"React.Js", "img":"assets/images/react_icon.png"},
+        {"name":"PHP", "img":"assets/images/php.png"},
+        {"name":"MySql", "img":"assets/images/mysql-database.png"},
+        {"name":"Git", "img":"assets/images/git.png"},
+        {"name":"GitHub", "img":"assets/images/github.png"}
+    ];
+
+    products.map( item => {
+        document.getElementById("skills_container").innerHTML += `
+         <div class="progressbox">
+                                <div class="progressbox_sub">
+                                    <span>${item.name}</span>
+                                </div>
+                                <img src="${item.img}" alt="HTML5 Logo" class="skill_logo">
+                            </div>
+        `
+    })
+
+}
+
+window.onload = loadSkills;

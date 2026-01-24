@@ -23,14 +23,14 @@
                 <h3>Mayur Raj</h3>
             </div>
             <div class="box1">
-                <a href="">Home</a>
+                <a href="#home">Home</a>
                 <a href="#about">About Me</a>
-                <a href="">What I do</a>
-                <a href="">Resume</a>
+                <a href="#what_i_do">What I do</a>
+                <a href="#resume">Resume</a>
                 <a href="">Portfolio</a>
-                <a href="">Services</a> 
+                <a href="#services">Services</a> 
                 <!-- // what i can build -->
-                <a href="">Contact</a>
+                <a href="#contact_me">Contact</a>
             </div>
             <div class="box2">
                 <a href=""><i class="bi bi-facebook icon"></i></a>
@@ -95,7 +95,7 @@
                     </section>
                 </div> 
             </div>
-            <div class="section" style="background-color: #343a40;">
+            <div class="section" id="what_i_do" style="background-color: #343a40;">
                 <div class="container">
                     <h2 class="spotlight" style="color: white;">What I do</h2>
                     <div class="what_i_do_container">
@@ -105,7 +105,7 @@
                             </div>
                             <div class="service_details_container">
                                 <h4>Frontend Development</h4>
-                                <span>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</span>
+                                <span>I build responsive and modern UI using HTML, CSS, JavaScript, and Bootstrap with clean design and smooth user experience.</span>
                             </div>
                         </div>
                          <div class="what_i_dooo">
@@ -114,7 +114,7 @@
                             </div>
                             <div class="service_details_container">
                                 <h4>Backend Development</h4>
-                                <span>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</span>
+                                <span>I develop secure backend systems using PHP and MySQL, including authentication, CRUD operations, and API integration.</span>
                             </div>
                         </div>
                          <div class="what_i_dooo">
@@ -123,7 +123,7 @@
                             </div>
                             <div class="service_details_container">
                                 <h4>Full Stack Web Development</h4>
-                                <span>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</span>
+                                <span>I create complete web applications from frontend to backend, connecting UI with databases and building fully working projects.</span>
                             </div>
                         </div>
                          <div class="what_i_dooo">
@@ -132,89 +132,105 @@
                             </div>
                             <div class="service_details_container">
                                 <h4>React.js (Learning)</h4>
-                                <span>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</span>
+                                <span>Currently learning React.js to build fast, reusable components and dynamic single-page applications with better performance.</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="section" style="background-color: rgb(33, 37, 41);" >
+            <div class="section" id="resume" style="background-color: rgb(33, 37, 41);" >
                  <div class="container">
                     <h2 class="spotlight" style="color: white;">Resume</h2>
                     <div class="skill_container">
-                        <span>My Skills</span>
-                        <div class="progressbox_container">
-                            <div class="progressbox">
-                                <div class="progressbox_sub">
-                                    <span>HTML5</span>
-                                    <span>90%</span>
-                                </div>
-                                <progress max="100" value="90"></progress>
-                            </div>
-                            <div class="progressbox">
-                                <div class="progressbox_sub">
-                                    <span>CSS3</span>
-                                    <span>90%</span>
-                                </div>
-                                <progress max="100" value="90"></progress>
-                            </div>
-                            <div class="progressbox">
-                                <div class="progressbox_sub">
-                                    <span>JavaScript (ES6+)</span>
-                                    <span>90%</span>
-                                </div>
-                                <progress max="100" value="90"></progress>
-                            </div>
-                            <div class="progressbox">
-                                <div class="progressbox_sub">
-                                    <span>PHP</span>
-                                    <span>90%</span>
-                                </div>
-                                <progress max="100" value="90"></progress>
-                            </div>
-                            <div class="progressbox">
-                                <div class="progressbox_sub">
-                                    <span>MySql</span>
-                                    <span>90%</span>
-                                </div>
-                                <progress max="100" value="90"></progress>
-                            </div>
-                            <div class="progressbox">
-                                <div class="progressbox_sub">
-                                    <span>Bootstrap</span>
-                                    <span>90%</span>
-                                </div>
-                                <progress max="100" value="90"></progress>
-                            </div>
-                            <div class="progressbox">
-                                <div class="progressbox_sub">
-                                    <span>React.Js</span>
-                                    <span>90%</span>
-                                </div>
-                                <progress max="100" value="90"></progress>
-                            </div>
-                            <div class="progressbox">
-                                <div class="progressbox_sub">
-                                    <span>Git & GitHub</span>
-                                    <span>90%</span>
-                                </div>
-                                <progress max="100" value="90"></progress>
-                            </div>
+                        <span class="my_skill">My Skills</span>
+                        <div class="progressbox_container" id="skills_container">
+
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="section">
+            <div class="section" id="services" style="background-color: #343a40;">
+                <section class="services" >
+                    <div class="container">
+                        <div class="section-head">
+                        <h2>My Services</h2>
+                        <p>What I can do for you</p>
+                        </div>
+
+                        <div class="services-grid">
+
+                        <div class="service-card">
+                            <div class="icon-box">
+                            <img src="assets/images/webdevelopment.png" alt="Web Development">
+                            </div>
+                            <h3>Website Development</h3>
+                            <p>Modern, responsive and fast websites using HTML, CSS, JavaScript & React.</p>
+                            <a href="#contact_me" class="service-link">Get Started →</a>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="icon-box">
+                            <img src="assets/images/frontend.png" alt="UI Design">
+                            </div>
+                            <h3>UI / Frontend Design</h3>
+                            <p>Clean UI, smooth animations and mobile-first layouts for better user experience.</p>
+                            <a href="#contact_me" class="service-link">Get Started →</a>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="icon-box">
+                            <img src="assets/images/backend.png" alt="Backend & API">
+                            </div>
+                            <h3>Backend & API</h3>
+                            <p>Secure PHP + MySQL backend, login systems, admin panels and APIs.</p>
+                            <a href="#contact_me" class="service-link">Get Started →</a>
+                        </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="section" id="contact_me">
                 <div class="container">
                     <h2 class="spotlight" style="color: white;">Get In Touch</h2>
                     <div class="addres_and_form_div_container">
-                        
+                        <div class="msg_cont">
+                            <div class="msg_cont_sub">
+                                <h5>
+                                    Have a project in mind or just want to say hi? Feel free to reach out!
+                                </h5>
+                                <span> Available for freelance work. </span>
+                                <span>Let’s collaborate on open-source and build together.</span>
+                                <span>Ready to contribute to your next project.</span>
+                                <span>Let’s build something amazing together.</span>
+                            </div>  
+                        </div>
+                        <div class="form_cont">
+                            <div class="form_container_glass">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>  
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlTextarea1" class="form-label">Textarea</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             
         </div>
     </main>
+    <script>loadSkills()</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js" integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/script.js"></script>
 </body>
