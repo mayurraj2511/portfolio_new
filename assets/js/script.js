@@ -92,3 +92,4 @@ function loadSkills() {
 }
 
 window.onload = loadSkills;
+

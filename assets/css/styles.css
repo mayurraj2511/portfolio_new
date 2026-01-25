@@ -10,7 +10,7 @@
 main {
     height: 100vh;
     width: 100vw;
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +22,8 @@ main {
 aside {
     width: 22%;
     height: 100%;
-    background-color: coral;
+    background-color: rgb(17, 20, 25);
+    /* background-color: coral; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -36,12 +37,13 @@ aside {
     align-items: center;
     height: auto;
     width: 100%;
-    background-color: rgb(152, 127, 241);
+    /* background-color: rgb(152, 127, 241); */
     padding: 5px;
 }
 
 h3 {
     overflow: visible;
+    color: white;
 }
 
 .box2 {
@@ -120,12 +122,28 @@ a {
 .text_container {
     height: 300px;
     width: 600px;
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     justify-content: center;    
     align-items: center;
+   background: rgba(255, 255, 255, 0.12);   /* glass white */
+  border-radius: 20px;                     /* more smooth */
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(18px);             /* stronger blur */
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.35);
+  padding: 40px 50px;
+  color: white;
 }
+.text_container:hover {
+      transform:  scale(1.03);
+    box-shadow: 0 30px 60px rgba(52, 211, 153, 0.3), 
+                0 0 40px rgba(52, 211, 153, 0.25);
+    background: rgba(255, 255, 255, 0.12);
+  cursor: pointer;
+}
+
 .typed_heading {
     font-size: 40px;
     font-weight: bold;
@@ -343,6 +361,7 @@ a {
 }
 .my_skill {
     color: white;
+    overflow: hidden;
     font: bold 2rem "Poppins", sans-serif;
 }
 .form_cont {
@@ -383,7 +402,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: lightgray;
+    /* background-color: lightgray; */
 }
 .progressbox {
     width: 130px;
