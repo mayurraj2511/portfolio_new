@@ -18,6 +18,10 @@ main {
     top: 0;
 }
 
+.nav {
+    display: none;
+}
+
 /* Aside works */
 aside {
     width: 22%;
