@@ -18,7 +18,7 @@ main {
     top: 0;
 }
 
-.nav {
+.navbar {
     display: none;
 }
 
@@ -141,7 +141,7 @@ a {
   color: white;
 }
 .text_container:hover {
-      transform:  scale(1.03);
+      /* transform:  scale(1.03); */
     box-shadow: 0 30px 60px rgba(52, 211, 153, 0.3), 
                 0 0 40px rgba(52, 211, 153, 0.25);
     background: rgba(255, 255, 255, 0.12);
