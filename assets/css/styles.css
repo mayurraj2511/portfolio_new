@@ -62,7 +62,8 @@ h3 {
 .circle1 {
     width: 200px;
     height: 200px;
-    background-color: yellow;
+    background-color: rgb(128,128,128);
+    /* background-color: yellow; */
     border-radius: 50%;
     /* margin: 20px; */
     display: flex;
@@ -543,7 +544,8 @@ progress {
   line-height: 1.6;
   margin-bottom: 18px;
 }
-
+.sp_an {color: white;
+font-size: 15px;}
 .service-link{
   text-decoration: none;
   color: #7d4cff;
