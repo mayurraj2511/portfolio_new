@@ -393,7 +393,7 @@ a {
 .form_cont {
     height: 100%;
     width: 50%;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
     display: flex;
     flex-direction: column;
     justify-content: center;
