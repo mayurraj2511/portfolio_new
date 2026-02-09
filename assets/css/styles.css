@@ -44,7 +44,9 @@ aside {
     /* background-color: rgb(152, 127, 241); */
     padding: 5px;
 }
-
+.aside_tag {
+    overflow: hidden;
+}
 h3 {
     overflow: visible;
     color: white;
@@ -56,7 +58,16 @@ h3 {
     width: 80%;
     justify-content: space-evenly;
     align-items: center;
-    background-color: black;
+    /* background-color: black; */
+    overflow: hidden;
+}
+.box2 > a > i{
+    color: white;
+    font-size: 25px;
+}
+.box2 > a:hover > i {
+    color: #22d3ee;
+    cursor: pointer;
 }
 
 .circle1 {
@@ -317,8 +328,9 @@ a {
     backdrop-filter: blur(10px);    /* Glass blur effect */
     -webkit-backdrop-filter: blur(10px); /* Safari support */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Soft shadow */
-    padding: 20px;
-    color: white;    
+    padding: 10px 20px;
+    color: white;
+    overflow: visible;    
     /* background-color: lightcoral; */
 }
 .service_icon_container {
@@ -345,7 +357,16 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
+     background: rgba(0, 0, 0, 0.3); /* Semi-transparent black */
+    border-radius: 10px;            /* Rounded corners */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+    backdrop-filter: blur(18px);    /* Glass blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    padding: 10px 20px;
+    color: white;
+    overflow: visible;
 }
 .msg_cont {
     height: 100%;
@@ -353,7 +374,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
 .msg_cont_sub {
     height: 92%;
@@ -361,8 +382,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
-    background-color: #22d3ee;
+    align-items: flex-start;
+    /* background-color: #22d3ee; */
 }
 .my_skill {
     color: white;
@@ -505,7 +526,6 @@ progress {
   transition: 0.3s ease;
   pointer-events: none;
 }
-
 
 .service-card:hover{
   transform: translateY(-8px);
