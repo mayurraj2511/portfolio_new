@@ -34,7 +34,7 @@ I'm a self-taught developer passionate about continuous learning. I've built a s
 
 I'm always interested in collaborating on projects or discussing web development. Feel free to reach out:
 
-- **Email:** [your.email@example.com](mailto:rajmayur458@gmail.com)
+- **Email:** [rajmayur458@gmail.com](mailto:rajmayur458@gmail.com)
 <!-- - **GitHub:** [github.com/yourprofile](https://github.com/yourprofile)
 - **LinkedIn:** [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
 - **Portfolio:** [yourportfoliosite.com](https://yourportfoliosite.com) -->
